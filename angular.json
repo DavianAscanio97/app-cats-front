@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "app-cats-front:build:production"
+              "buildTarget": "app-cats-front:build:production"
             },
             "development": {
-              "browserTarget": "app-cats-front:build:development"
+              "buildTarget": "app-cats-front:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "app-cats-front:build"
+            "buildTarget": "app-cats-front:build"
           }
         },
         "test": {
