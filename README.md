@@ -1,27 +1,40 @@
 # AppCatsFront
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
+Este proyecto es una aplicación web desarrollada en Angular que permite explorar información sobre diferentes razas de gatos. Conecta con una API para obtener datos sobre las razas de gatos y muestra detalles, imágenes y otra información relevante.
 
-## Development server
+## Instalación
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. Clona este repositorio en tu máquina local.
+2. Asegúrate de tener Node.js (v20.12.2) y npm instalados en tu sistema.
+3. Ejecuta `npm install` en la raíz del proyecto para instalar todas las dependencias.
 
-## Code scaffolding
+## Librerías utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [Angular](https://angular.io): Un framework de desarrollo para construir aplicaciones web modernas y escalables.
+- [PrimeNG](https://www.primefaces.org/primeng/): Una librería de componentes UI para Angular.
+- [RxJS](https://rxjs.dev): Una librería para la programación reactiva en JavaScript.
 
-## Build
+## Descripción del proyecto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+La aplicación AppCatsFront es una interfaz de usuario interactiva que permite a los usuarios explorar y conocer más sobre las razas de gatos. Proporciona una amplia gama de funcionalidades, como la visualización de detalles de las razas de gatos, imágenes de cada raza, búsqueda de razas específicas y más.
 
-## Running unit tests
+## Conexión con la API
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+La aplicación se conecta a una API externa que proporciona datos sobre diferentes razas de gatos. La API ofrece endpoints para obtener detalles de las razas de gatos, imágenes asociadas, características específicas y más. La comunicación con la API se realiza utilizando solicitudes HTTP a través del servicio CatFacade.
 
-## Running end-to-end tests
+Para obtener más información sobre la API de gatos, consulta la documentación oficial en [https://developers.thecatapi.com/view-account/ylX4blBYT9FaoVd6OhvR?report=bOoHBz-8t](https://developers.thecatapi.com/view-account/ylX4blBYT9FaoVd6OhvR?report=bOoHBz-8t).
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+## Ejecución de pruebas unitarias
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+El proyecto cuenta con pruebas unitarias para garantizar la calidad del código y la funcionalidad de los componentes. A continuación, se detallan los pasos para ejecutar las pruebas unitarias:
+
+1. Asegúrate de haber instalado todas las dependencias del proyecto utilizando el comando `npm install`.
+2. Ejecuta el comando `ng test` en la raíz del proyecto para iniciar la ejecución de las pruebas unitarias.
+3. Las pruebas unitarias se ejecutarán en un navegador y mostrarán los resultados en la consola de salida. También se generará un informe detallado de las pruebas en la carpeta `coverage` del proyecto.
+
+### Descripción de las pruebas unitarias
+
+- **CatListComponent**: Esta prueba verifica que el componente CatListComponent cargue correctamente la lista de gatos y muestre los detalles de cada uno de ellos. Se prueba la funcionalidad de carga de datos, filtrado y visualización de detalles.
+- **CatDetailsComponent**: Esta prueba verifica que el componente CatDetailsComponent cargue correctamente los detalles de un gato específico y muestre la imagen asociada. Se prueba la funcionalidad de carga de datos y visualización de detalles.
+
